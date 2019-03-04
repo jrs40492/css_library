@@ -1,0 +1,77 @@
+$label-move-top: -13px;
+$label-font-size: 0.75em;
+
+.input {
+  .validation {
+    color: red;
+    padding: 3px 0 0 0;
+    display: none;
+  }
+
+  &.invalid {
+    .validation {
+      display: block;
+    }
+  }
+
+  // Text Field
+  &.text {
+    position: relative;
+    margin: 10px 0 28px 0;
+
+    &.inline {
+      margin: 9px 0 0 0;
+    }
+
+    input {
+      width: 100%;
+      border: none;
+      border-radius: 0;
+      border-bottom: 1px solid $border-color;
+      background-color: inherit;
+      padding: 2px 0;
+      font-size: 1.1em;
+      @include transition(all 0.2s ease-out);
+
+      &:focus {
+        outline: none;
+        border-bottom: 1px solid $primary-color;
+      }
+
+      &:focus + label {
+        top: $label-move-top;
+        font-size: $label-font-size;
+        color: $primary-color;
+      }
+    }
+
+    label {
+      width: 100%;
+      position: absolute;
+      top: 5px;
+      left: 0;
+      @include transition(all 0.2s ease-out);
+
+      &:hover {
+        cursor: text;
+      }
+
+      &.dirty {
+        top: $label-move-top;
+        font-size: $label-font-size;
+      }
+    }
+
+    .action {
+      position: absolute;
+      top: -4px;
+      right: 0;
+      background: none;
+      cursor: pointer;
+
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+}

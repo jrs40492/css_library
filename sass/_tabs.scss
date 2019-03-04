@@ -1,0 +1,62 @@
+.tabs {
+  .tab-bar {
+    display: flex;
+    height: 35px;
+    text-align: center;
+    color: $primary-color;
+    border-bottom: 1px solid $border-color;
+    padding: 10px 0 0 0;
+
+    .tab {
+      flex: 1 0 auto;
+      cursor: pointer;
+
+      &.is-active {
+        border-bottom: 2px solid $secondary-color;
+      }
+    }
+  }
+}
+
+.tab-content {
+  display: none;
+  flex-direction: column;
+
+  &.is-active {
+    display: flex;
+  }
+
+  .tab-row {
+    flex: 1 0 auto;
+    display: flex;
+    padding: 5px 0;
+  }
+}
+
+.wow-list {
+  margin: 8px 5px;
+
+  .week,
+  .points {
+    flex: 0 1 auto;
+  }
+
+  .team {
+    flex: 1 0 auto;
+  }
+}
+
+#home-stats,
+#away-stats {
+  @include break-min('md') {
+    display: flex;
+  }
+}
+
+#picks-1,
+#picks-2,
+#picks-3 {
+  @include break-min('md') {
+    display: flex;
+  }
+}

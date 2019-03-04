@@ -1,0 +1,28 @@
+$paging-border-radius: 10px;
+
+.pagination {
+  display: flex;
+  justify-content: center;
+
+  .page {
+    color: $primary-color;
+    cursor: pointer;
+    padding: 3px 10px;
+    font-size: 1.1em;
+
+    &:hover {
+      border-bottom: 2px solid $secondary-color;
+    }
+  }
+
+  .ellipsis {
+    margin: 2px 0 0 0;
+    font-size: 1.3em;
+    letter-spacing: 2px;
+  }
+
+  .page.is-active {
+    border-bottom: 2px solid $primary-color;
+    font-weight: bold;
+  }
+}

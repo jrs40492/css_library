@@ -1,0 +1,47 @@
+$table-columns: 16;
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.table {
+  width: 100%;
+  margin: 0 0 10px;
+  padding: 0;
+
+  th,
+  td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    border: 1px solid $border-color;
+    height: 30px;
+    vertical-align: middle;
+    padding: 3px 5px;
+    font-weight: normal;
+  }
+
+  .table-header {
+    background-color: $primary-color;
+    color: $primary-font;
+    text-align: center;
+  }
+
+  th {
+    &.sort {
+      cursor: pointer;
+    }
+  }
+
+  td {
+    &.number {
+      text-align: right;
+    }
+  }
+
+  @for $i from 1 through $table-columns {
+    &.table-#{$i}-column {
+      width: ($i / $table-columns * 100%);
+    }
+  }
+}

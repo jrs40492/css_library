@@ -1,0 +1,10 @@
+.icon {
+  padding: 4px;
+  border: 1px solid transparent;
+
+  &.hover:hover {
+    cursor: pointer;
+    border: 1px solid $primary-color;
+    @include border-radius(20px);
+  }
+}

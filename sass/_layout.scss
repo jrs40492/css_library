@@ -1,0 +1,7 @@
+@each $key, $value in $breakpoints {
+  .hide-#{$key} {
+    @include break-min($key) {
+      display: none;
+    }
+  }
+}

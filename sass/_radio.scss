@@ -1,0 +1,52 @@
+.radio-group-label {
+  font-weight: bold;
+  padding: 0 0 7px 0;
+}
+
+label.radio {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  input {
+    position: absolute;
+    opacity: 0;
+
+    &:checked ~ span {
+      border: 2px solid $primary-color;
+
+      &:after {
+        display: block;
+      }
+    }
+  }
+
+  span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    border: 2px solid $border-color;
+    border-radius: 50%;
+    margin: 0 0 0 10px;
+
+    &:after {
+      content: '';
+      position: absolute;
+      display: none;
+      top: 2px;
+      left: 2px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: $primary-color;
+    }
+  }
+}
