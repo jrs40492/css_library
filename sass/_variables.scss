@@ -1,28 +1,28 @@
 // Font
-$font-family: 'Montserrat', sans-serif;
+$font-family: 'Montserrat', sans-serif !default;
 
 // Site Colors
-$primary-color: #0960a5;
-$primary-font: white;
+$primary-color: #0960a5 !default;
+$primary-font: white !default;
 
-$secondary-color: #2677b5;
-$secondary-font: white;
+$secondary-color: #2677b5 !default;
+$secondary-font: white !default;
 
-$background-color: rgb(215, 226, 255);
-$border-color: rgb(167, 165, 165);
+$background-color: rgb(215, 226, 255) !default;
+$border-color: rgb(167, 165, 165) !default;
 
-$success: green;
-$danger: #cc0000;
+$success: green !default;
+$danger: #cc0000 !default;
 
 // Header
-$header-height: 45px;
+$header-height: 45px !default;
 
 // Side Nav
-$side-nav-link-height: 35px;
+$side-nav-link-height: 35px !default;
 
 // Footer
-$footer-height: 35px;
-$footer-background: $primary-color;
+$footer-height: 35px !default;
+$footer-background: $primary-color !default;
 
 // General
 $breakpoints: (
@@ -30,4 +30,4 @@ $breakpoints: (
   sm: 700px,
   md: 1000px,
   lg: 1200px
-);
+) !default;

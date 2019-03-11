@@ -19,22 +19,3 @@
 @mixin animation($str) {
   animation: #{$str};
 }
-
-@mixin transition($transition) {
-  -moz-transition: $transition;
-  -o-transition: $transition;
-  -webkit-transition: $transition;
-  transition: $transition;
-}
-
-@mixin appearance($value) {
-  -webkit-appearance: $value;
-  -moz-appearance: $value;
-  appearance: $value;
-}
-
-@mixin border-radius($radius) {
-  -webkit-border-radius: $radius;
-  border-radius: $radius;
-  background-clip: padding-box;
-}

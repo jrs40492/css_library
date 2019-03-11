@@ -31,7 +31,7 @@ $label-font-size: 0.75em;
       background-color: inherit;
       padding: 2px 0;
       font-size: 1.1em;
-      @include transition(all 0.2s ease-out);
+      transition: all 0.2s ease-out;
 
       &:focus {
         outline: none;
@@ -50,7 +50,7 @@ $label-font-size: 0.75em;
       position: absolute;
       top: 5px;
       left: 0;
-      @include transition(all 0.2s ease-out);
+      transition: all 0.2s ease-out;
 
       &:hover {
         cursor: text;
