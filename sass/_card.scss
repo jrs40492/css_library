@@ -3,6 +3,11 @@
   margin: 0 0 15px 0;
   box-shadow: 3px 4px 6px 0 $border-color;
 
+  &.card-rounded {
+    border-radius: 5px;
+    overflow: hidden;
+  }
+
   .card-header {
     padding: 15px;
     border-bottom: 1px solid $border-color;
@@ -12,7 +17,7 @@
   }
 
   .card-body {
-    padding: 10px 15px 10px 15px;
+    padding: 10px 15px;
 
     .card-body-header {
       font-weight: bold;
@@ -22,15 +27,21 @@
 
   .card-footer {
     border-top: 1px solid $border-color;
-    padding: 15px;
     display: flex;
 
+    .card-footer-left,
+    .card-footer-right {
+      padding: 15px;
+      text-align: center;
+    }
+
     .card-footer-left {
-      flex: 1 0 auto;
+      flex: 1 0 50%;
+      border-right: 1px solid $border-color;
     }
 
     .card-footer-right {
-      flex: 0 0 auto;
+      flex: 0 0 50%;
     }
 
     .card-footer-full {
