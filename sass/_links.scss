@@ -4,20 +4,19 @@ a {
   &:hover {
     text-decoration: underline;
   }
-}
 
-a.link-main {
-  color: $primary-color;
-
-  &:visited {
+  &.link-main {
     color: $primary-color;
+
+    &:visited {
+      color: $primary-color;
+    }
   }
-}
-
-a.link-light {
-  color: white;
-
-  &:visited {
+  &.link-light {
     color: white;
+
+    &:visited {
+      color: white;
+    }
   }
 }

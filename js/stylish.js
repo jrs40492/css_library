@@ -33,7 +33,7 @@ const setField = (id, value) => {
 
 (() => {
   const fields = document.querySelectorAll('input');
-  console.log(fields);
+
   fields.forEach(field => {
     validateInput(field);
 

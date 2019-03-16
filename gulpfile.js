@@ -49,5 +49,5 @@ gulp.task('sass', gulp.series(['sass:mini', 'sass:var']));
 
 gulp.task('watch', () => {
   gulp.watch('./sass/*.scss', gulp.series(['sass']));
-  gulp.watch('./js/*.js', gulp.series(['js']));
+  gulp.watch('./js/*.js', gulp.series(['js:minify']));
 });

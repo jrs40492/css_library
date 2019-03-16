@@ -24,10 +24,6 @@ div.select {
 
     appearance: none;
 
-    background-image: url('/images/icons/arrow_drop_down_black_24.svg');
-    background-repeat: no-repeat;
-    background-position: 98% center;
-
     border-radius: 0;
     border-right: 1px solid $primary-color;
     border-top: 1px solid $primary-color;
@@ -41,9 +37,6 @@ div.select {
       background: $secondary-color;
       color: $secondary-font;
       cursor: pointer;
-      background-image: url('/images/icons/arrow_drop_down_white_24.svg');
-      background-repeat: no-repeat;
-      background-position: 98% center;
     }
   }
 }
