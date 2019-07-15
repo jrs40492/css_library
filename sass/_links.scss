@@ -5,15 +5,15 @@ a {
 
   &:hover {
     cursor: pointer;
-  }
 
-  &:hover:before {
-    width: 95%;
+    &:before {
+      width: 100%;
+    }
   }
 
   &:before {
     content: " ";
-    height: 3px;
+    height: 2px;
     position: absolute;
     bottom: -2px;
     border-radius: 12px;
